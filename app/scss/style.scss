@@ -18,7 +18,7 @@ header{
 }
 .menu__list{
   a{
-    color: #c4c4c4;
+    color: $text;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 32px;
@@ -45,5 +45,123 @@ header{
   }
 }
 // end header
+// start section info
+.info{
+  border-top: 1px solid #fff;
+  background-color: $bg;
+  height: 754px;
+}
+.info__title{
+  width: 500px;
+  margin: 0 auto;
+}
+.info__text{
+  width: 495px;
+  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+  line-height: 19px;
+  margin-top: 80px;
+  line-height: 100%;
+  color: $title;
+  text-transform: uppercase;
+}
+.info__title-dicoration {
+  margin-top: 30px;
+  height: 10px;
+  position: relative;
+  display: flex;
+  img{
+    justify-content: center;
+    position: absolute;
+    left: 245px;
+    bottom: 6px;
+  }
+    &::before{
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 212px;
+      background-color: #5e5e5d;
+      left: 15px;
+      bottom: 11px;
+  }
+    &::after{
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 212px;
+      background-color: #5e5e5d;
+      right: 15px;
+      bottom: 11px;
+  }
+}
+.advantages{
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.info__items{
+  margin-top: 65px;
+  max-width: 402px;
+  height: 300px;
+}
+.info__item{
+  // background-color: #fcd6cc;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  &-box{
+    width: 302px;
+  }
+  &-title{
+    padding-right: 31px;
+    text-align: right;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $title;
+    
+  }
+  &-text{
+    color: $text;
+    padding-top: 22px;
+    max-width: 271px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &-icons{
+    margin: 0 auto; 
+  }
+}
+.info-icon{
+  padding: 0px 35px;
+}
+.info__item-title--right{
+  order: -1;
+  padding-left: 0px;
+  text-align: left;
+}
+.info__item-text--right{
+  order: -1;
+  text-align: left;
+  padding-left: 0px;
+}
+.info__item-icons--right{
+  order: -1;
+  padding-right: 30px;
+}
+
+.unnamed_копия {
+  background-image: url("unnamed копия.png");
+  position: absolute;
+  left: 647px;
+  top: 1179px;
+  width: 320px;
+  height: 423px;
+  z-index: 69;
+}
+
+// end section info
 
 @import 'media';
