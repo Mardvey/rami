@@ -3,5 +3,47 @@
 @import 'fonts';
 
 // start header
+header{
+  background-color: $bg;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  height: 98px;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  margin-top: 5px;
+}
+.menu__list{
+  a{
+    color: #c4c4c4;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 32px;
+    transition: all 0.3s;
+    &:hover{
+      content: '';
+      color: #fff;
+    }
+  }
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 46px
+    }
+  }
+}
+.header__box{
+  margin-top: 5px;
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 21px;
+    }
+  }
+}
+// end header
 
 @import 'media';
