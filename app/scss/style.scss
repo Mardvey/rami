@@ -122,8 +122,9 @@ header{
   &__title{
     width: 500px;
     margin: 0 auto;
+    margin-bottom: 41px;
   }
-  &__text{
+  &__title-text{
     width: 495px;
     margin: 0 auto;
     font-size: 40px;
@@ -133,6 +134,9 @@ header{
     line-height: 100%;
     color: $title;
     text-transform: uppercase;
+    span{
+      color: #181817;
+    }
   }
 }
 .info__title-dicoration {
@@ -265,6 +269,114 @@ header{
   }
 }
 // end section gallery
+// start section price
+.product{
+  border-top: 1px solid #f9fafc;
+  background-color: #f9fafc;
+  padding-bottom: 149px;
+}
+.product__item{
+  max-width: 272px;
+  background-color: #fff;
+  position: relative;
+  &:hover{
+    content: '';
+    background-image: url(../images/content/hover.jpg);
+    opacity: 0.569;
+    width: 294px;
+    height: 400px;
+    .product__menu{
+      display: block;
+    }
+  }
+}
+.product__chair{
+padding-left: 49px;
+padding-top: 21px;
+  img{
+    width: 200px;
+    height: 200px;
+    width: 77%;
+  }
+}
+.product__box{
+  max-width: 216px;
+  height: 130px;
+  padding-left: 24px;
+}
+.product__box-name {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.product__box-text{
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-bottom: 34px;
+}
+.product__box-price {
+  font-size: 29px;
+  color: #000;
+  font-weight: 700;
+}
+.product__inner{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(198px, 272px) minmax(198px, 272px) minmax(198px, 272px) minmax(198px, 272px);
+  grid-auto-rows: minmax(338px, 400px);
+  grid-gap: 30px
+}
+.product__menu{
+  display: none;
+  left: 36px;
+  top: 163px;
+  max-width: 186px;
+  width: 100%;
+  height: 58px;
+  background-color: #555f6d;
+  border-radius: 26px;
+  position: absolute;
+  &-box{
+    padding-top: 19px;
+    padding-left: 41px;
+  }
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 17px
+    }
+  }
+}
+.new-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  border: 25px solid transparent;
+  border-left: 25px solid red;
+  border-top: 25px solid red;
+  .new{
+    position: relative;
+    span{
+      position: absolute;
+      left: -21px;
+      top: -15px;
+      transform: rotate(-45deg);
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
+.new-nonactive{
+  display: none;
+}
+
+
+
+// end section price
 
 
 
