@@ -20,5 +20,38 @@ $(function(){
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
+
+  
+    $(".menu ul li a").click(function () {
+      $(".menu ul li a").removeClass("active");
+      $(this).toggleClass("active");
+    })
+  
+
+  
+    $(".menu__btn").on('click', function(){
+      $(".menu ul").slideToggle();
+
+    });
+
+  
+  
+
 });
